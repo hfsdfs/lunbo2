@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+*{
+	box-sizing: border-box;
+}
+.biankuang{
+	width: 600px;
+	height: 600px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.tupian{
+	
+	position: relative;
+	
+}
+.tupian > img{
+	width: 100%;
+	transition: all 0.3s;
+	position: absolute;
+	top: 0;
+	
+}
+.tupian > img.current{
+	left: 0;
+	transform: translateX(0);
+	z-index: 1;
+}
+.tupian > img.leave{
+	transform: translateX(-100%);
+	z-index: 1;
+}
+.tupian > img.enter{
+	transform: translateX(100%);
+}
+/*.tupian > img.stay{
+	transform: translateX(100%);
+}*/
